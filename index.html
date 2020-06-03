@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRONÓMETRO</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="menu">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <div>
+                                <button id="inicio">
+                                    <span class="desktopBtn">Empezar</span>                               
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                                        <path class="st0" d="M33.7,8.7v82.6c0,2.2,2.6,3.2,4.1,1.7l41.3-41.3c0.9-0.9,0.9-2.5,0-3.4L37.8,7C36.3,5.4,33.7,6.5,33.7,8.7z"/>
+                                        </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <button id="fin" disabled>
+                                    <span class="desktopBtn">Parar</span>
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                                    <rect x="14.3" y="14.3" class="st0" width="71.5" height="71.5"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <button id="guardar" disabled>
+                                    <span class="desktopBtn">Guardar</span>
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                                    <path class="st1" d="M68.8,17H20.9c-0.5,0-0.9,0.4-0.9,0.9v16.4c0,0.5,0.4,0.9,0.9,0.9h47.9c0.5,0,0.9-0.4,0.9-0.9V17.9
+                                    C69.7,17.4,69.3,17,68.8,17z"/>
+                                    <path class="st0" d="M88.3,31.5L63.1,8.7H12.3c-0.5,0-0.9,0.4-0.9,0.9v83.2c0,0.5,0.4,0.9,0.9,0.9h75.5c0.5,0,0.9-0.4,0.9-0.9
+                                    L88.3,31.5z M71.4,59.8l-21,21c-0.5,0.5-1.3,0.5-1.7,0l-21-21c-0.8-0.8-0.2-2.1,0.9-2.1h12.9V24.9c0-0.4,0.4-0.8,0.8-0.8h14.5
+                                    c0.4,0,0.8,0.4,0.8,0.8v32.7h12.9C71.6,57.7,72.1,59,71.4,59.8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <button id="borrar" disabled>
+                                    <span class="desktopBtn">Borrar</span>
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                                    <g>
+                                    <path class="st0" d="M18.5,89l-7.4-7.4c-0.4-0.4-0.4-1.1,0-1.5l69.7-69.7c0.4-0.4,1.1-0.4,1.5,0l7.4,7.4c0.4,0.4,0.4,1.1,0,1.5
+                                    L20,89C19.6,89.4,19,89.4,18.5,89z"/>
+                                    <g>
+                                    <path class="st0" d="M82.3,89l7.4-7.4c0.4-0.4,0.4-1.1,0-1.5L20,10.5c-0.4-0.4-1.1-0.4-1.5,0l-7.4,7.4c-0.4,0.4-0.4,1.1,0,1.5
+                                    L80.9,89C81.3,89.4,81.9,89.4,82.3,89z"/>
+                                    </g>
+                                    </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>   
+                    </ul>
+                </div>
+
+        </div>
+        <div class="numbers">
+            
+            <div class="resultado temporizador">
+
+                <div class="time milisegundos">
+                    <div class="numeros">
+                        <h3>00</h3>
+                    </div>
+                </div>
+            
+                <div class="time segundos">
+                    <div class="numeros">
+                        <h3>00</h3>
+                    </div>
+                </div>
+                
+                <div class="time minutos">
+                    <div class="numeros">
+                        <h3>00</h3>
+                    </div>
+                </div>
+                
+                <div class="time horas">
+                    <div class="numeros">
+                        <h3>00</h3>
+                    </div>
+                </div>   
+
+            </div>   
+            
+        </div>
+
+        </div>
+
+        <div class="bot">
+            <div class="contenedor guardado">
+                
+            </div>
+        </div>
+    </div>
+     
+
+    <script src="scripts.js"></script>
+</body>
+</html>
